@@ -1,4 +1,4 @@
-# Patrik's configurations
+# Antons's configurations
 
 This repository contains my personal configurations for
 things like Windows, Linux, my terminals etc. I will 
@@ -6,6 +6,8 @@ therefore not accept any pull requests or changes to this repo.
 
 Feel free to fork this repository or use it as an
 inspiration for your own configurations.
+
+Obviously very inspired by https://github.com/patriksvensson/machine
 
 ## Disclaimer
 
