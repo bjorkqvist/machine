@@ -35,25 +35,18 @@ New-Item -Path $ChocoCachePath -ItemType Directory -Force
 ##########################################################################
 
 choco upgrade --cache="$ChocoCachePath" --yes discord
-choco upgrade --cache="$ChocoCachePath" --yes slack
-choco upgrade --cache="$ChocoCachePath" --yes microsoft-edge
 choco upgrade --cache="$ChocoCachePath" --yes git
-choco upgrade --cache="$ChocoCachePath" --yes ghostscript.app
 choco upgrade --cache="$ChocoCachePath" --yes 7zip.install
 choco upgrade --cache="$ChocoCachePath" --yes office365business
-choco upgrade --cache="$ChocoCachePath" --yes screentogif
 choco upgrade --cache="$ChocoCachePath" --yes paint.net
 choco upgrade --cache="$ChocoCachePath" --yes chocolateygui
 choco upgrade --cache="$ChocoCachePath" --yes powershell-core
 choco upgrade --cache="$ChocoCachePath" --yes ripgrep
 choco upgrade --cache="$ChocoCachePath" --yes microsoft-windows-terminal
-choco upgrade --cache="$ChocoCachePath" --yes winsnap
-choco upgrade --cache="$ChocoCachePath" --yes gsudo
 
 if(!$IsArm) {
     # x86/x64 only
     choco upgrade --cache="$ChocoCachePath" --yes steam
-    choco upgrade --cache="$ChocoCachePath" --yes uplay
     choco upgrade --cache="$ChocoCachePath" --yes origin
     choco upgrade --cache="$ChocoCachePath" --yes spotify
     choco upgrade --cache="$ChocoCachePath" --yes starship
@@ -61,12 +54,16 @@ if(!$IsArm) {
     choco upgrade --cache="$ChocoCachePath" --yes docker-for-windows
     choco upgrade --cache="$ChocoCachePath" --yes geforce-experience
     choco upgrade --cache="$ChocoCachePath" --yes sysinternals
-    choco upgrade --cache="$ChocoCachePath" --yes nodejs
-    choco upgrade --cache="$ChocoCachePath" --yes cmake
     choco upgrade --cache="$ChocoCachePath" --yes curl
     choco upgrade --cache="$ChocoCachePath" --yes vscode
     choco upgrade --cache="$ChocoCachePath" --yes visualstudio2019professional --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --norestart --passive --locale en-US"
-    choco upgrade --cache="$ChocoCachePath" --yes dotpeek --pre 
+    choco upgrade --cache="$ChocoCachePath" --yes dotpeek --pre
+    choco upgrade --cache="$ChocoCachePath" --yes grepwin  
+    choco upgrade --cache="$ChocoCachePath" --yes handbrake.install 
+    choco upgrade --cache="$ChocoCachePath" --yes paint.net 
+    choco upgrade --cache="$ChocoCachePath" --yes postman
+    choco upgrade --cache="$ChocoCachePath" --yes transgui
+    choco upgrade --cache="$ChocoCachePath" --yes github-desktop
 }
 
 ##########################################################################
